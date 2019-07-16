@@ -8,7 +8,7 @@ import com.squareup.picasso.Picasso;
 
 public class ViewBindingAdapter {
 
-    @BindingAdapter("onPageChangeListener")
+    @BindingAdapter("oginPageChangeListener")
     public static void onPageChange(ViewPager viewPager, final PageSelectionListener pageSelectionListener) {
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 
