@@ -2,6 +2,7 @@ package com.example.weatherapp.Network;
 
 import com.example.weatherapp.Object.Model;
 
+import io.reactivex.Observable;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
@@ -13,6 +14,6 @@ public interface WeatherService {
               "X-RapidAPI-Key: 08aa8a2995msh3494129b67c7601p1d69bdjsn3599b96f027b"})
 
     @GET("/weather")
-    Call<Model> getWeather(@Query("units") String unit,
-                           @Query("q") String location);
+    Observable<Model> getWeather(@Query("units") String unit,
+                                 @Query("q") String location);
 }
