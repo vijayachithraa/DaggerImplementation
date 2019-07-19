@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 public class Main {
 
     @SerializedName("temp")
-    private String temp;
+    private double temp;
 
     @SerializedName("pressure")
     private String pressure;
@@ -20,10 +20,10 @@ public class Main {
     private String temp_max;
 
     public String getTemp() {
-        return temp;
+        return String.valueOf(temp);
     }
 
-    public void setTemp(String temp) {
+    public void setTemp(double temp) {
         this.temp = temp;
     }
 

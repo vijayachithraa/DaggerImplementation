@@ -5,8 +5,8 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 public class Model {
-    @SerializedName("coord")
-    private Coord coord;
+    @SerializedName("coordinates")
+    private Coordinates coordinates;
 
     @SerializedName("weather")
     private List<Weather> weather;
@@ -29,8 +29,8 @@ public class Model {
     @SerializedName("dt")
     private String dt;
 
-    @SerializedName("sys")
-    private Sys sys;
+    @SerializedName("system")
+    private System system;
 
     @SerializedName("timezone")
     private String timezone;
@@ -44,12 +44,12 @@ public class Model {
     @SerializedName("cod")
     private String cod;
 
-    public Coord getCoord() {
-        return coord;
+    public Coordinates getCoordinates() {
+        return coordinates;
     }
 
-    public void setCoord(Coord coord) {
-        this.coord = coord;
+    public void setCoordinates(Coordinates coordinates) {
+        this.coordinates = coordinates;
     }
 
     public List<Weather> getWeather() {
@@ -108,12 +108,12 @@ public class Model {
         this.dt = dt;
     }
 
-    public Sys getSys() {
-        return sys;
+    public System getSystem() {
+        return system;
     }
 
-    public void setSys(Sys sys) {
-        this.sys = sys;
+    public void setSystem(System system) {
+        this.system = system;
     }
 
     public String getTimezone() {

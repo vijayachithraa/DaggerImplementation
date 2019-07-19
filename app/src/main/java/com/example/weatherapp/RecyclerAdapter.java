@@ -47,6 +47,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
         public void bind(ItemViewModel itemViewModel) {
             recyclerviewItemBinding.setItemViewModel(itemViewModel);
+            recyclerviewItemBinding.executePendingBindings();
         }
     }
 }

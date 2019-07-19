@@ -2,7 +2,7 @@ package com.example.weatherapp.Object;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Coord {
+public class Coordinates {
     @SerializedName("lon")
     private String lon;
 

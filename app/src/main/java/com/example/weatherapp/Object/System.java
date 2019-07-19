@@ -2,7 +2,7 @@ package com.example.weatherapp.Object;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Sys {
+public class System {
     @SerializedName("type")
     private String type;
 
